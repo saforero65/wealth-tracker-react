@@ -184,11 +184,30 @@ Pre-configured support for Colombian financial institutions:
 
 ### Environment Variables
 
+1. **Copy the template file:**
 ```bash
-# Optional: Custom API endpoints
-VITE_EXCHANGE_RATE_API=your_api_endpoint
-VITE_GOOGLE_SHEETS_API_KEY=your_google_api_key
+cp .env.template .env
 ```
+
+2. **Configure your environment variables in `.env`:**
+```bash
+# 🔐 Google Identity Services
+# Get your Client ID from: https://console.cloud.google.com/apis/credentials
+VITE_GIS_CLIENT_ID=your_google_client_id_here
+
+# 📊 Google Sheets (Optional - can also be configured from UI)
+# Google Sheets spreadsheet ID for automatic backup
+VITE_SHEETS_SPREADSHEET_ID=your_spreadsheet_id_here
+
+# 💱 Exchange Rate APIs (Optional)
+# For real-time exchange rate fetching
+VITE_EXCHANGE_RATE_API_KEY=your_exchange_rate_api_key_here
+
+# Additional configuration
+VITE_APP_ENV=production
+```
+
+**⚠️ Security Note:** Never commit your `.env` file to version control. The repository includes `.env.template` with placeholder values for reference.
 
 ### Auto-sync Configuration
 
@@ -283,6 +302,19 @@ npm install --save-dev gh-pages
 npm run build
 npm run deploy
 ```
+
+## 🔒 Security
+
+### Environment Variables
+- **Never commit `.env` files** to version control
+- Use `.env.template` as a reference for required variables
+- Store sensitive credentials securely (use environment variable services in production)
+- Rotate API keys and credentials regularly
+
+### API Keys and Credentials
+- **Google Client ID**: Get from [Google Cloud Console](https://console.cloud.google.com/apis/credentials)
+- **Google Sheets**: Configure appropriate access permissions
+- **Exchange Rate APIs**: Use reputable providers and monitor usage quotas
 
 ## 🤝 Contributing
 
