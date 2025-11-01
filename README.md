@@ -13,30 +13,35 @@ A modern, responsive personal finance dashboard for comprehensive portfolio mana
 ## ✨ Features
 
 ### 📊 **Interactive Dashboard**
+
 - Real-time portfolio overview with total wealth calculation
 - Interactive charts (pie, bar, area, line charts) powered by Recharts
 - Asset distribution by class and currency
 - Portfolio performance analytics
 
 ### 💳 **Account Management**
+
 - Multiple account types: savings, checking, CDs, brokers, exchanges
 - Multi-currency support (COP, USD, EUR, BTC, ETH, USDT)
 - Integration with Colombian financial institutions (Bancolombia, Nu Bank, Trii, Binance)
 - Automatic CD interest calculations
 
 ### 📈 **Investment Portfolio**
+
 - Stock, fund, and cryptocurrency tracking
 - Real-time price updates and performance metrics
 - Asset class diversification analysis
 - Portfolio allocation visualization
 
 ### 💸 **Transaction Management**
+
 - Complete transaction history
 - Automatic categorization
 - Advanced filtering and search
 - Income vs expense tracking
 
 ### 🌐 **Technical Excellence**
+
 - **Responsive Design**: Mobile-first approach with hamburger navigation
 - **Dark Mode**: Persistent theme switching with system preference detection
 - **Real-time Sync**: Auto-sync capabilities with intelligent rate limiting
@@ -46,6 +51,7 @@ A modern, responsive personal finance dashboard for comprehensive portfolio mana
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Node.js 18+ and npm/yarn
 - Modern web browser
 
@@ -88,22 +94,26 @@ yarn preview
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - **React 18** - Modern React with hooks and concurrent features
 - **TypeScript 5.9** - Type-safe development
 - **Vite 7.1** - Fast build tool and development server
 - **Tailwind CSS 4.1** - Utility-first CSS framework
 
 ### UI Components
+
 - **shadcn/ui** - Beautifully designed components built with Radix UI
 - **Recharts** - Composable charting library built on React components
 - **Lucide React** - Beautiful & consistent icon toolkit
 
 ### State Management
+
 - **Zustand** - Small, fast, and scalable state management
 - **React Hook Form** - Performant, flexible forms with easy validation
 - **Zod** - TypeScript-first schema declaration and validation
 
 ### Data & Storage
+
 - **LocalForage** - Offline storage improved
 - **Date-fns** - Modern JavaScript date utility library
 - **Nanoid** - A tiny, secure, URL-friendly unique string ID generator
@@ -121,31 +131,36 @@ The application is fully responsive and optimized for mobile devices:
 ## 🎨 Theme System
 
 ### Dark Mode Support
+
 - **Automatic detection** of system preference
 - **Manual toggle** with persistent storage
 - **Smooth transitions** between themes
 - **Complete coverage** across all components and charts
 
 ### Theme Testing
+
 Open browser console and use the built-in theme tester:
+
 ```javascript
 // Available theme testing functions
-testTheme.setLight()    // Switch to light theme
-testTheme.setDark()     // Switch to dark theme
-testTheme.setSystem()   // Use system preference
-testTheme.toggle()      // Toggle between light/dark
-testTheme.status()      // Show current theme status
+testTheme.setLight(); // Switch to light theme
+testTheme.setDark(); // Switch to dark theme
+testTheme.setSystem(); // Use system preference
+testTheme.toggle(); // Toggle between light/dark
+testTheme.status(); // Show current theme status
 ```
 
 ## 💰 Currency & Exchange Rates
 
 ### Supported Currencies
+
 - **Fiat**: COP (Colombian Peso), USD, EUR
 - **Cryptocurrencies**: BTC, ETH, USDT
 - **Real-time rates** with intelligent caching
 - **Fallback systems** for API failures
 
 ### Exchange Rate Features
+
 - Multiple API providers with automatic failover
 - Intelligent rate limiting to avoid API quotas
 - Local caching with configurable TTL
@@ -156,16 +171,19 @@ testTheme.status()      // Show current theme status
 Pre-configured support for Colombian financial institutions:
 
 ### Banks
+
 - **Bancolombia** - Colombia's largest bank
 - **Nu Bank** - Digital banking platform
 
 ### Investment Platforms
+
 - **Trii** - Colombian investment platform
 - **Binance** - Global cryptocurrency exchange
 
 ## 🔧 Configuration
 
 ### Environment Variables
+
 ```bash
 # Optional: Custom API endpoints
 VITE_EXCHANGE_RATE_API=your_api_endpoint
@@ -173,7 +191,9 @@ VITE_GOOGLE_SHEETS_API_KEY=your_google_api_key
 ```
 
 ### Auto-sync Configuration
+
 The app supports auto-sync with Google Sheets for data backup:
+
 1. Navigate to Admin panel
 2. Configure Google Sheets integration
 3. Enable auto-sync with custom intervals
@@ -181,6 +201,7 @@ The app supports auto-sync with Google Sheets for data backup:
 ## 📊 Data Structure
 
 ### Account Types
+
 - `savings` - Savings accounts
 - `checking` - Checking accounts
 - `cdt` - Certificates of Deposit
@@ -188,6 +209,7 @@ The app supports auto-sync with Google Sheets for data backup:
 - `exchange` - Cryptocurrency exchange accounts
 
 ### Asset Classes
+
 - `acciones` - Stocks
 - `fondos` - Mutual funds
 - `bonos` - Bonds
@@ -197,6 +219,7 @@ The app supports auto-sync with Google Sheets for data backup:
 ## 🧪 Development
 
 ### Project Structure
+
 ```
 src/
 ├── components/        # Reusable UI components
@@ -210,12 +233,14 @@ src/
 ```
 
 ### Code Quality
+
 - **ESLint** configuration for code consistency
 - **TypeScript** strict mode enabled
 - **Prettier** formatting (recommended)
 - **Component-based architecture** with clear separation of concerns
 
 ### Testing Theme System
+
 ```bash
 # Development mode includes theme testing utilities
 npm run dev
@@ -227,6 +252,7 @@ npm run dev
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
+
 ```bash
 # Install Vercel CLI
 npm i -g vercel
@@ -236,6 +262,7 @@ vercel --prod
 ```
 
 ### Netlify
+
 ```bash
 # Build command
 npm run build
@@ -245,6 +272,7 @@ dist
 ```
 
 ### GitHub Pages
+
 ```bash
 # Install gh-pages
 npm install --save-dev gh-pages
@@ -265,6 +293,7 @@ npm run deploy
 5. Open a Pull Request
 
 ### Development Guidelines
+
 - Follow TypeScript best practices
 - Use semantic commit messages
 - Ensure responsive design compatibility
@@ -294,4 +323,4 @@ If you have any questions or need help getting started:
 
 **Made with ❤️ for personal finance management**
 
-*This project is perfect for developers looking for a complete fintech solution or as a foundation for larger financial applications.*
+_This project is perfect for developers looking for a complete fintech solution or as a foundation for larger financial applications._
